@@ -1,0 +1,6 @@
+Hello everyone learning git commands
+git --version
+apt get install git
+git add .
+git commit -m "first file"
+git status
