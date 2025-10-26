@@ -1,0 +1,30 @@
+Docker commands
+1.	sudo su
+2.	docker -v
+3.	docker –version
+4.	docker info
+5.	systemctl status docker
+6.	docker login -u Bhumika
+7.	docker container ls
+8.	docker --help|less
+9.	docker network ls
+10.	docker container ls -a
+11.	docker images
+12.	docker images -a
+13.	docker rmi -f<image_id>
+14.	docker rmi -f<imageid> <image2>
+15.	docker container ls -aq
+16.	docker container rm $(docker container ls -aq)
+17.	docker container ls -a
+18.	docker container run ubuntu cat /etc/os-release
+19.	docker container ls  -a
+20.	docker images
+21.	docker container run ubuntu sleep 60
+22.	docker container ls -a
+23.	docker container rm <id> <id2>
+24.	docker container ls -a
+25.	docker container run -it ubuntu /bin/bash
+26.	docker pull mysql:latest
+27.	docker run --name Bhumiak-mysql -e MYSQL_ROOT_PASSWORD=1234 -d mysql
+28.	docker exec -it Bhumika-mysql bash
+bash# mysql -root -p
