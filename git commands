@@ -1,0 +1,30 @@
+1.	sudo su
+2.	apt update
+3.	apt-get install git
+4.	git --version
+5.	git config --global user.name “bhumika9385”
+6.	git config --global user.email bhumikapandhare1395@gmail.com
+7.	git config --list
+8.	git init
+9.	ls -altr
+10.	git clone https://github.com/bhumika9385/(repo).git
+11.	ls -altr
+12.	cd <repo>
+13.	ls
+14.	cat README.md
+15.	git status
+16.	git add .
+17.	git status
+18.	git commit -m “added file, my commit”
+19.	git push origin main
+if fetal error
+20.	git remote set-url origin <git_url>
+21.	git push origin main
+in repo path
+22.	ls -altr
+23.	git pull
+24.	ls -altr
+25.	git log
+26.	git log --oneline
+27.	git show <id>
+
