@@ -1,0 +1,73 @@
+**nginx (command line
+
+sudo su
+docker pull nginx:latest
+docker run -it -p 5555:80 --name server nginx:latest bash
+apt update
+apt install vim/nano
+cd usr/share/nginx/html/
+ls
+vim index.html
+
+#<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Page</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>This is a simple HTML page.</p>
+</body>
+</html>
+
+service nginx start
+
+http://localhost:5555
+
+
+
+**docker nginx
+
+sudo su
+docker ps -a
+gedit index.html
+
+#<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Page</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>This is a simple HTML page.</p>
+</body>
+</html>
+
+gedit Dockerfile
+#FROM nginx
+#COPY index.html /usr/share/nginx/html
+docker pull nginx:latest
+docker build -f<foldername> .
+docker run -p 8088:80 nginx
+go to local host 8088
+
+
+
+**mysql
+
+sudo su
+docker pull mysql:latest
+docker container run --name bhumika -e MYSQL_ROOT_PASSWORD=1234 -d mysql
+docker exec -it bhumika bash
+mysql -u root -p
+////password:1234
+mysql### show databases;
+         use database
+         create database database-name;;
+         CREATE TABLE students (
+    id INT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    age INT,
+    grade VARCHAR(10)
+);
+show tables;
