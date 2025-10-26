@@ -1,0 +1,41 @@
+Hello World Using jenkins (git wala)
+9. Create and run a job in Jenkins for simple HelloWorld in Java using a version control tool.
+
+1.	sudo su
+2.	docker pull Jenkins/Jenkins
+3.	docker run -p 8080:80 jenkins/Jenkins
+
+•	github pe java ka helloworld program file banana hai
+
+open browser
+http://localhost:8080
+Jenkins interface dikhega
+1.	new item  name  select freestyle project
+2.	select git  enter github repo URL  master/main
+
+in build steps
+3.	add build step  execute shell
+inside execute shell
+4.	javac filename.java
+5.	java filename
+6.	apply  save  build now
+
+
+factorial Using jenkins (locally)
+12. Install Jenkins and execute factorial of a number.
+1.	sudo su
+2.	docker pull Jenkins/Jenkins
+3.	docker run -p 8080:80 jenkins/Jenkins
+
+open browser
+http://localhost:8080
+Jenkins interface dikhega
+7.	new item  name  select freestyle project
+8.	select none 
+
+in build steps
+9.	add build step  execute shell
+inside execute shell
+10.	cd path(jaha file local machine pe save ki hai)
+11.	javac filename.java
+12.	java filename             OR           python3 filename.py
